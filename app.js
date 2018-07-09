@@ -16,8 +16,7 @@ const httpServer = http.createServer((req, res) => {
         res.writeHead(200);
         res.end(payload);
     } else {
-        res.setHeader('Content-Type', 'text/plain');
-        res.writeHead(400);
+        res.writeHead(404);
         res.end();
     }
 });
